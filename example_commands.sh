@@ -11,19 +11,19 @@
 # You can modify these parameters as needed based on your requirements and quota.
 
 # # META PROMPTING WITH PYTHON EXPERT INSTRUCTION
-# for task in "GameOf24"
-# do
-# python run_experiments.py \
-#     --task_name ${task} \
-#     --meta_config_path prompts/meta-v0-2023-08-14-baseline.json \
-#     --output_directory TEST-CHATGPT-META-PROMPTING-WITH-PYTHON \
-#     --temperature 0.1 \
-#     --include_expert_name_in_instruction \
-#     --question_prefix_or_path prompts/meta-prompting-instruction.txt \
-#     --model_name "gpt-3.5-turbo" \
-#     --fresh_eyes \
-#     --max_num 1
-# done
+for task in "test1"
+do
+python3 run_experiments.py \
+     --task_name ${task} \
+     --meta_config_path prompts/meta-v0-2023-08-14-baseline.json \
+     --output_directory TEST-CHATGPT-META-PROMPTING-WITH-PYTHON \
+     --temperature 0.1 \
+     --include_expert_name_in_instruction \
+     --question_prefix_or_path prompts/meta-prompting-instruction.txt \
+     --model_name "gpt-4-turbo-preview" \
+     --fresh_eyes \
+     --max_num 1
+done
 
 # # META PROMPTING WITH NO PYTHON EXPERT INSTRUCTION
 # meta-prompting-with-no-python-expert-instruction.txt

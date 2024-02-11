@@ -17,6 +17,7 @@ from utils.meta_scaffolding import MetaPromptingScaffolding
 
 # Task description dictionary
 DESCRIPTION_DICT = {
+    "test1": "finish the question",
     "word_sorting": "Sort a list of words alphabetically, placing them in a single line of text separated by spaces.",
     "multistep_arithmetic_two": "Solve multi-step arithmetic problems.",
     "geometric_shapes": "Name geometric shapes from their SVG paths.",
